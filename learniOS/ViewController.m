@@ -44,6 +44,17 @@
     view.frame = CGRectMake(150, 150, 100, 100);
     [self.view addSubview: view];
     
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushController)];
+    [view addGestureRecognizer:tapGesture];
+}
+
+- (void) pushController {
+    UIViewController *newView = [[UIViewController alloc] init];
+    newView.view.backgroundColor = [UIColor whiteColor];
+    newView.navigationItem.title = @"Details";
+    newView.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Share" style:UIBarButtonItemStylePlain target:self action:nil];
+    
+    [self.navigationController pushViewController:newView animated:YES];
 }
 
 
