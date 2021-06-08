@@ -22,14 +22,13 @@
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
     ViewController *defaultView = [[ViewController alloc] init];
-    UINavigationController *navigationControler = [[UINavigationController alloc] initWithRootViewController: defaultView];
     
     //create view controllers of tab bar
 //    UIViewController *controller1 = [[UIViewController alloc] init];
 //    controller1.view.backgroundColor = [UIColor redColor];
-    navigationControler.tabBarItem.title = @"News";
-    navigationControler.tabBarItem.image = [UIImage imageNamed:@"icons/page@2x.png"];
-    navigationControler.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/page_selected@2x.png"];
+    defaultView.tabBarItem.title = @"News";
+    defaultView.tabBarItem.image = [UIImage imageNamed:@"icons/page@2x.png"];
+    defaultView.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/page_selected@2x.png"];
     
     UIViewController *controller2 = [[UIViewController alloc] init];
     controller2.view.backgroundColor = [UIColor yellowColor];
@@ -49,10 +48,11 @@
     controller4.tabBarItem.image = [UIImage imageNamed:@"icons/home@2x.png"];
     controller4.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/home_selected@2x.png"];
     
-    [tabBarController setViewControllers:@[navigationControler, controller2, controller3, controller4]];
+    [tabBarController setViewControllers:@[defaultView, controller2, controller3, controller4]];
+    UINavigationController *navigationControler = [[UINavigationController alloc] initWithRootViewController: tabBarController];
     
-    self.window.rootViewController = tabBarController;
-    //[self.window makeKeyAndVisible];
+    self.window.rootViewController = navigationControler;
+    [self.window makeKeyAndVisible];
 }
 
 
