@@ -14,6 +14,7 @@
 		6903BFC82660B66300453AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6903BFC72660B66300453AA7 /* Assets.xcassets */; };
 		6903BFCB2660B66300453AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6903BFC92660B66300453AA7 /* LaunchScreen.storyboard */; };
 		6903BFCE2660B66300453AA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6903BFCD2660B66300453AA7 /* main.m */; };
+		69CB61AB266F4067000D1807 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 69CB61AA266F4067000D1807 /* icons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		6903BFCA2660B66300453AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6903BFCC2660B66300453AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6903BFCD2660B66300453AA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69CB61AA266F4067000D1807 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		6903BFBA2660B65800453AA7 /* learniOS */ = {
 			isa = PBXGroup;
 			children = (
+				69CB61AA266F4067000D1807 /* icons */,
 				6903BFBB2660B65800453AA7 /* AppDelegate.h */,
 				6903BFBC2660B65800453AA7 /* AppDelegate.m */,
 				6903BFBE2660B65800453AA7 /* SceneDelegate.h */,
@@ -133,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6903BFCB2660B66300453AA7 /* LaunchScreen.storyboard in Resources */,
+				69CB61AB266F4067000D1807 /* icons in Resources */,
 				6903BFC82660B66300453AA7 /* Assets.xcassets in Resources */,
 				6903BFC62660B65800453AA7 /* Main.storyboard in Resources */,
 			);

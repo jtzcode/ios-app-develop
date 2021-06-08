@@ -18,6 +18,37 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    //create view controllers of tab bar
+    UIViewController *controller1 = [[UIViewController alloc] init];
+    controller1.view.backgroundColor = [UIColor redColor];
+    controller1.tabBarItem.title = @"News";
+    controller1.tabBarItem.image = [UIImage imageNamed:@"icons/page@2x.png"];
+    controller1.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/page_selected@2x.png"];
+    
+    UIViewController *controller2 = [[UIViewController alloc] init];
+    controller2.view.backgroundColor = [UIColor yellowColor];
+    controller2.tabBarItem.title = @"Videos";
+    controller2.tabBarItem.image = [UIImage imageNamed:@"icons/video@2x.png"];
+    controller2.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/video_selected@2x.png"];
+    
+    UIViewController *controller3 = [[UIViewController alloc] init];
+    controller3.view.backgroundColor = [UIColor greenColor];
+    controller3.tabBarItem.title = @"Favorites";
+    controller3.tabBarItem.image = [UIImage imageNamed:@"icons/like@2x.png"];
+    controller3.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/like_selected@2x.png"];
+    
+    UIViewController *controller4 = [[UIViewController alloc] init];
+    controller4.view.backgroundColor = [UIColor lightGrayColor];
+    controller4.tabBarItem.title = @"Mine";
+    controller4.tabBarItem.image = [UIImage imageNamed:@"icons/home@2x.png"];
+    controller4.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/home_selected@2x.png"];
+    
+    [tabBarController setViewControllers:@[controller1, controller2, controller3, controller4]];
+    
+    self.window.rootViewController = tabBarController;
+    //[self.window makeKeyAndVisible];
 }
 
 
