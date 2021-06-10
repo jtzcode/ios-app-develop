@@ -7,6 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "ViewController.h"
+#import "VideoViewController.h"
 
 @interface SceneDelegate () <UITabBarControllerDelegate>
 
@@ -30,11 +31,7 @@
     defaultView.tabBarItem.image = [UIImage imageNamed:@"icons/page@2x.png"];
     defaultView.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/page_selected@2x.png"];
     
-    UIViewController *controller2 = [[UIViewController alloc] init];
-    controller2.view.backgroundColor = [UIColor yellowColor];
-    controller2.tabBarItem.title = @"Videos";
-    controller2.tabBarItem.image = [UIImage imageNamed:@"icons/video@2x.png"];
-    controller2.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/video_selected@2x.png"];
+    VideoViewController *controller2 = [[VideoViewController alloc] init];
     
     UIViewController *controller3 = [[UIViewController alloc] init];
     controller3.view.backgroundColor = [UIColor greenColor];

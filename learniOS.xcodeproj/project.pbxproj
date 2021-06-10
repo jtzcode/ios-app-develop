@@ -15,6 +15,7 @@
 		6903BFCB2660B66300453AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6903BFC92660B66300453AA7 /* LaunchScreen.storyboard */; };
 		6903BFCE2660B66300453AA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6903BFCD2660B66300453AA7 /* main.m */; };
 		69CB61AB266F4067000D1807 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 69CB61AA266F4067000D1807 /* icons */; };
+		69E1EF162672086200B15AC7 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E1EF152672086200B15AC7 /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		6903BFCC2660B66300453AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6903BFCD2660B66300453AA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		69CB61AA266F4067000D1807 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		69E1EF142672086200B15AC7 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		69E1EF152672086200B15AC7 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				6903BFC92660B66300453AA7 /* LaunchScreen.storyboard */,
 				6903BFCC2660B66300453AA7 /* Info.plist */,
 				6903BFCD2660B66300453AA7 /* main.m */,
+				69E1EF142672086200B15AC7 /* VideoViewController.h */,
+				69E1EF152672086200B15AC7 /* VideoViewController.m */,
 			);
 			path = learniOS;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E1EF162672086200B15AC7 /* VideoViewController.m in Sources */,
 				6903BFC32660B65800453AA7 /* ViewController.m in Sources */,
 				6903BFBD2660B65800453AA7 /* AppDelegate.m in Sources */,
 				6903BFCE2660B66300453AA7 /* main.m in Sources */,

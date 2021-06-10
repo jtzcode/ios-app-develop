@@ -21,9 +21,6 @@
 }
 @end
 
-@interface ViewController () <UITableViewDataSource>
-@end
-
 @implementation ViewController
 
 - (instancetype)init {
@@ -41,6 +38,7 @@
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
     tableView.dataSource = self;
+    tableView.delegate = self;
     [self.view addSubview:tableView];
     
 //    TestView* view = [[TestView alloc] init];
@@ -54,6 +52,16 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 20;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *selectedView = [[UIViewController alloc] init];
+    selectedView.title = [NSString stringWithFormat:@"Eggy %@", @(indexPath.row)];
+    [self.navigationController pushViewController:selectedView animated:YES];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
