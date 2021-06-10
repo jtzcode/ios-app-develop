@@ -8,7 +8,7 @@
 #import "SceneDelegate.h"
 #import "ViewController.h"
 
-@interface SceneDelegate ()
+@interface SceneDelegate () <UITabBarControllerDelegate>
 
 @end
 
@@ -48,6 +48,7 @@
     controller4.tabBarItem.image = [UIImage imageNamed:@"icons/home@2x.png"];
     controller4.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/home_selected@2x.png"];
     
+    tabBarController.delegate = self;
     [tabBarController setViewControllers:@[defaultView, controller2, controller3, controller4]];
     UINavigationController *navigationControler = [[UINavigationController alloc] initWithRootViewController: tabBarController];
     
@@ -55,6 +56,9 @@
     [self.window makeKeyAndVisible];
 }
 
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    NSLog(@"View Selected");
+}
 
 - (void)sceneDidDisconnect:(UIScene *)scene {
     // Called as the scene is being released by the system.

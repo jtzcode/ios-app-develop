@@ -21,7 +21,7 @@
 }
 @end
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource>
 @end
 
 @implementation ViewController
@@ -39,23 +39,43 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    TestView* view = [[TestView alloc] init];
-    view.backgroundColor = [UIColor greenColor];
-    view.frame = CGRectMake(150, 150, 100, 100);
-    [self.view addSubview: view];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    tableView.dataSource = self;
+    [self.view addSubview:tableView];
     
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushController)];
-    [view addGestureRecognizer:tapGesture];
+//    TestView* view = [[TestView alloc] init];
+//    view.backgroundColor = [UIColor greenColor];
+//    view.frame = CGRectMake(150, 150, 100, 100);
+//    [self.view addSubview: view];
+//
+//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pushController)];
+//    [view addGestureRecognizer:tapGesture];
 }
 
-- (void) pushController {
-    UIViewController *newView = [[UIViewController alloc] init];
-    newView.view.backgroundColor = [UIColor whiteColor];
-    newView.navigationItem.title = @"Details";
-    newView.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Share" style:UIBarButtonItemStylePlain target:self action:nil];
-    
-    [self.navigationController pushViewController:newView animated:YES];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 20;
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *tableCell = [tableView dequeueReusableCellWithIdentifier:@"id_1"];
+    if (!tableCell) {
+        tableCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id_1"];
+    }
+
+    tableCell.textLabel.text = @"Eggy's home!";
+    tableCell.detailTextLabel.text = @"Lalalalululu";
+    tableCell.imageView.image = [UIImage imageNamed:@"icons/like@2x.png"];
+    return tableCell;
+}
+
+//- (void) pushController {
+//    UIViewController *newView = [[UIViewController alloc] init];
+//    newView.view.backgroundColor = [UIColor whiteColor];
+//    newView.navigationItem.title = @"Details";
+//    newView.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Share" style:UIBarButtonItemStylePlain target:self action:nil];
+//
+//    [self.navigationController pushViewController:newView animated:YES];
+//}
 
 
 @end
