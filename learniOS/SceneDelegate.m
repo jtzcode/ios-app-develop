@@ -8,6 +8,7 @@
 #import "SceneDelegate.h"
 #import "ViewController.h"
 #import "VideoViewController.h"
+#import "RecommendViewController.h"
 
 @interface SceneDelegate () <UITabBarControllerDelegate>
 
@@ -33,11 +34,7 @@
     
     VideoViewController *controller2 = [[VideoViewController alloc] init];
     
-    UIViewController *controller3 = [[UIViewController alloc] init];
-    controller3.view.backgroundColor = [UIColor greenColor];
-    controller3.tabBarItem.title = @"Favorites";
-    controller3.tabBarItem.image = [UIImage imageNamed:@"icons/like@2x.png"];
-    controller3.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/like_selected@2x.png"];
+    RecommendViewController *recommendController = [[RecommendViewController alloc] init];
     
     UIViewController *controller4 = [[UIViewController alloc] init];
     controller4.view.backgroundColor = [UIColor lightGrayColor];
@@ -46,7 +43,7 @@
     controller4.tabBarItem.selectedImage = [UIImage imageNamed:@"icons/home_selected@2x.png"];
     
     tabBarController.delegate = self;
-    [tabBarController setViewControllers:@[defaultView, controller2, controller3, controller4]];
+    [tabBarController setViewControllers:@[defaultView, controller2, recommendController, controller4]];
     UINavigationController *navigationControler = [[UINavigationController alloc] initWithRootViewController: tabBarController];
     
     self.window.rootViewController = navigationControler;

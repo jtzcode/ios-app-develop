@@ -16,6 +16,7 @@
 		6903BFCE2660B66300453AA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6903BFCD2660B66300453AA7 /* main.m */; };
 		69CB61AB266F4067000D1807 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 69CB61AA266F4067000D1807 /* icons */; };
 		69E1EF162672086200B15AC7 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E1EF152672086200B15AC7 /* VideoViewController.m */; };
+		69E1EF192678484F00B15AC7 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E1EF182678484F00B15AC7 /* RecommendViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		69CB61AA266F4067000D1807 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
 		69E1EF142672086200B15AC7 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		69E1EF152672086200B15AC7 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		69E1EF172678484F00B15AC7 /* RecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		69E1EF182678484F00B15AC7 /* RecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				6903BFCD2660B66300453AA7 /* main.m */,
 				69E1EF142672086200B15AC7 /* VideoViewController.h */,
 				69E1EF152672086200B15AC7 /* VideoViewController.m */,
+				69E1EF172678484F00B15AC7 /* RecommendViewController.h */,
+				69E1EF182678484F00B15AC7 /* RecommendViewController.m */,
 			);
 			path = learniOS;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 				6903BFBD2660B65800453AA7 /* AppDelegate.m in Sources */,
 				6903BFCE2660B66300453AA7 /* main.m in Sources */,
 				6903BFC02660B65800453AA7 /* SceneDelegate.m in Sources */,
+				69E1EF192678484F00B15AC7 /* RecommendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
