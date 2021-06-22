@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "NewsTableViewCell.h"
 
 @interface TestView : UIView
 @end
@@ -55,7 +56,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 80;
+    return 100;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -65,14 +66,16 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *tableCell = [tableView dequeueReusableCellWithIdentifier:@"id_1"];
+    NewsTableViewCell *tableCell = [tableView dequeueReusableCellWithIdentifier:@"id_1"];
     if (!tableCell) {
-        tableCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id_1"];
+        tableCell = [[NewsTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id_1"];
     }
+    
+    [tableCell layoutTableView];
 
-    tableCell.textLabel.text = @"Eggy's home!";
-    tableCell.detailTextLabel.text = @"Lalalalululu";
-    tableCell.imageView.image = [UIImage imageNamed:@"icons/like@2x.png"];
+//    tableCell.textLabel.text = @"Eggy's home!";
+//    tableCell.detailTextLabel.text = @"Lalalalululu";
+//    tableCell.imageView.image = [UIImage imageNamed:@"icons/like@2x.png"];
     return tableCell;
 }
 

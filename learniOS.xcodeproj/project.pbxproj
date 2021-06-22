@@ -17,6 +17,7 @@
 		69CB61AB266F4067000D1807 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 69CB61AA266F4067000D1807 /* icons */; };
 		69E1EF162672086200B15AC7 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E1EF152672086200B15AC7 /* VideoViewController.m */; };
 		69E1EF192678484F00B15AC7 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E1EF182678484F00B15AC7 /* RecommendViewController.m */; };
+		69E1EF1C267C408F00B15AC7 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E1EF1B267C408F00B15AC7 /* NewsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		69E1EF152672086200B15AC7 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		69E1EF172678484F00B15AC7 /* RecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
 		69E1EF182678484F00B15AC7 /* RecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		69E1EF1A267C408F00B15AC7 /* NewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		69E1EF1B267C408F00B15AC7 /* NewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				69E1EF152672086200B15AC7 /* VideoViewController.m */,
 				69E1EF172678484F00B15AC7 /* RecommendViewController.h */,
 				69E1EF182678484F00B15AC7 /* RecommendViewController.m */,
+				69E1EF1A267C408F00B15AC7 /* NewsTableViewCell.h */,
+				69E1EF1B267C408F00B15AC7 /* NewsTableViewCell.m */,
 			);
 			path = learniOS;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				6903BFCE2660B66300453AA7 /* main.m in Sources */,
 				6903BFC02660B65800453AA7 /* SceneDelegate.m in Sources */,
 				69E1EF192678484F00B15AC7 /* RecommendViewController.m in Sources */,
+				69E1EF1C267C408F00B15AC7 /* NewsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
