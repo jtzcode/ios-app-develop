@@ -44,6 +44,21 @@
             self.timeLabel.textColor = [UIColor lightGrayColor];
             self.timeLabel;
         })];
+        
+        [self.contentView addSubview:({
+            self.rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(280, 15, 70, 70)];
+            self.rightImageView.backgroundColor = [UIColor redColor];
+            self.rightImageView;
+        })];
+        
+        [self.contentView addSubview:({
+            self.deleteButton = [[UIButton alloc] initWithFrame:CGRectMake(240, 70, 30, 20)];
+            self.deleteButton.backgroundColor = [UIColor blueColor];
+            [self.deleteButton setTitle:@"X" forState:UIControlStateNormal];
+            [self.deleteButton setTitle:@"V" forState:UIControlStateHighlighted];
+            [self.deleteButton addTarget:self action:@selector(deleteButtonOnClick) forControlEvents:UIControlEventTouchUpInside];
+            self.deleteButton;
+        })];
     }
     return self;
 }
@@ -61,6 +76,12 @@
     self.timeLabel.text = @"1 min ago";
     [self.timeLabel sizeToFit];
     self.timeLabel.frame = CGRectMake(self.commentLabel.frame.origin.x + self.commentLabel.frame.size.width + 15, self.timeLabel.frame.origin.y, self.timeLabel.frame.size.width, self.timeLabel.frame.size.height);
+    
+    self.rightImageView.image = [UIImage imageNamed:@"icons/eggy.jpeg"];
+}
+
+- (void) deleteButtonOnClick {
+    NSLog(@"Delete button clicked.");
 }
 
 @end

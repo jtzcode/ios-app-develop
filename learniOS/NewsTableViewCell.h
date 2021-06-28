@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readwrite) UILabel *commentLabel;
 @property(nonatomic, strong, readwrite) UILabel *timeLabel;
 
+@property(nonatomic, strong, readwrite) UIImageView *rightImageView;
+@property(nonatomic, strong, readwrite) UIButton *deleteButton;
+
 - (void) layoutTableView;
 @end
 
