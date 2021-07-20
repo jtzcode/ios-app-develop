@@ -14,6 +14,7 @@
 		6903BFC82660B66300453AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6903BFC72660B66300453AA7 /* Assets.xcassets */; };
 		6903BFCB2660B66300453AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6903BFC92660B66300453AA7 /* LaunchScreen.storyboard */; };
 		6903BFCE2660B66300453AA7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6903BFCD2660B66300453AA7 /* main.m */; };
+		699A2B2326A6CBF200424312 /* DetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 699A2B2226A6CBF200424312 /* DetailedViewController.m */; };
 		69CB61AB266F4067000D1807 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 69CB61AA266F4067000D1807 /* icons */; };
 		69E1EF162672086200B15AC7 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E1EF152672086200B15AC7 /* VideoViewController.m */; };
 		69E1EF192678484F00B15AC7 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E1EF182678484F00B15AC7 /* RecommendViewController.m */; };
@@ -33,6 +34,8 @@
 		6903BFCA2660B66300453AA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6903BFCC2660B66300453AA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6903BFCD2660B66300453AA7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		699A2B2126A6CBF200424312 /* DetailedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailedViewController.h; sourceTree = "<group>"; };
+		699A2B2226A6CBF200424312 /* DetailedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailedViewController.m; sourceTree = "<group>"; };
 		69CB61AA266F4067000D1807 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
 		69E1EF142672086200B15AC7 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		69E1EF152672086200B15AC7 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				69E1EF182678484F00B15AC7 /* RecommendViewController.m */,
 				69E1EF1A267C408F00B15AC7 /* NewsTableViewCell.h */,
 				69E1EF1B267C408F00B15AC7 /* NewsTableViewCell.m */,
+				699A2B2126A6CBF200424312 /* DetailedViewController.h */,
+				699A2B2226A6CBF200424312 /* DetailedViewController.m */,
 			);
 			path = learniOS;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				6903BFCE2660B66300453AA7 /* main.m in Sources */,
 				6903BFC02660B65800453AA7 /* SceneDelegate.m in Sources */,
 				69E1EF192678484F00B15AC7 /* RecommendViewController.m in Sources */,
+				699A2B2326A6CBF200424312 /* DetailedViewController.m in Sources */,
 				69E1EF1C267C408F00B15AC7 /* NewsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

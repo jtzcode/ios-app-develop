@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "NewsTableViewCell.h"
+#import "DetailedViewController.h"
 
 @interface TestView : UIView
 @end
@@ -60,7 +61,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *selectedView = [[UIViewController alloc] init];
+    DetailedViewController *selectedView = [[DetailedViewController alloc] init];
     selectedView.title = [NSString stringWithFormat:@"Eggy %@", @(indexPath.row)];
     [self.navigationController pushViewController:selectedView animated:YES];
 }
